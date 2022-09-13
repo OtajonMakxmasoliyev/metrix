@@ -1,11 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import Login from './pages/Login';
+import Form from './pages/Form';
+import "./style/style.scss"
 
 function App() {
   return (
     <div className="App">
-      <Login />
+      <Form />
     </div>
   );
 }

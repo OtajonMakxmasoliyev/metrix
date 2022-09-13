@@ -1,0 +1,211 @@
+@font-face {
+    font-family: "Inter";
+    src: url(../style/fonts/Inter/static/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(./fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-sb";
+    src: url(./fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+
+
+.Login {
+    width: 100%;
+    height: 100vh;
+    background-color: #F4F5FA;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 121px;
+    font-family: "Inter";
+
+    p {
+        margin: 0;
+    }
+
+    &_top {
+        height: 76px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 86px;
+        box-sizing: border-box;
+        background-color: #fff;
+    }
+
+    &_form {
+        padding: 44px 34px;
+        gap: 10px;
+
+
+        width: 443px;
+        height: 627px;
+
+        background: #FFFFFF;
+        border-radius: 12px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+
+        &_submitForm {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 32px;
+
+            div {
+                position: relative;
+
+                img {
+                    position: absolute;
+                    top: 14px;
+                    left: 18px;
+                }
+
+                input {
+                    height: 52px;
+                    width: 100%;
+                    line-height: 52px;
+                    padding-left: 56px;
+                    gap: 10px;
+
+                    /* Input/defaultBackground */
+
+                    background: rgba(239, 241, 249, 0.6);
+                    border-radius: 8px;
+                    box-sizing: border-box;
+                    border: none;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+
+                    /* Black/2 */
+
+                    color: #ABAFB1;
+
+                    /* Black/2 */
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                    &::placeholder {
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 19px;
+
+                        /* Black/2 */
+
+                        color: #ABAFB1;
+                    }
+
+
+                }
+
+                button {
+                    width: max-content;
+                    position: absolute;
+                    top: 35px;
+                    right: 15px;
+
+                    i {
+                        width: 14px;
+                        transition: all 0.75s;
+                        color: #000000;
+                    }
+                }
+            }
+
+
+
+        }
+
+        button {
+            margin-top: -20px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            /* identical to box height */
+
+            text-align: center;
+
+            /* Primary/100 */
+
+            color: #5570F1;
+            background-color: transparent;
+            border: none;
+            align-self: flex-end;
+        }
+
+        .Submit {
+            width: 180px;
+            height: 58px;
+
+            /* Primary */
+
+            background: #5570F1;
+            border-radius: 12px;
+            border: none;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+
+            color: #FFFFFF;
+            text-transform: capitalize;
+            align-self: center;
+        }
+    }
+
+
+}
+
+.title {
+    font-family: 'Poppins-sb';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #000000;
+
+    span {
+        color: #5570F1;
+    }
+    // "C:/k.jpeg",
+}
+
+.info {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    text-align: center;
+
+    /* Black/30 */
+
+    color: #8B8D97;
+}
