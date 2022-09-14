@@ -71,24 +71,10 @@ export default class Form extends Component {
                     <img src={Logo} alt="Metrix Logo" />
                 </div>
                 {
-                    this.state.signIn ? <SignIn onChange={this.onChangeHandler} chaqir={this.chaqir} Submit={this.submitIn} /> : <SignUp onChange={this.onChangeHandler} chaqir={this.chaqir} Submit={this.submitUp} />
+                    this.state.signIn ?
+                        <SignIn onChange={this.onChangeHandler} chaqir={this.chaqir} Submit={this.submitIn} />
+                        : <SignUp onChange={this.onChangeHandler} chaqir={this.chaqir} Submit={this.submitUp} />
                 }
-                {/* <div className="Login_form">
-                    <img src={Logo} alt="Metrix Logo" />
-                    <div className="Login_form_title">
-                        <p className='title'>Welcome back!</p>
-                        <p className='info'>Login to your account</p>
-                    </div>
-                    <div className="Login_form_submitForm">
-                        <div> <img src={Message} /><input type="email" name="email" placeholder='Email Address' onChange={this.onChangeHandler} /></div>
-                        <div> <img src={Lock} /><input type={this.state.showHide ? "password" : "text"} name="password" placeholder='Password' onChange={this.onChangeHandler} /> <button onClick={() => this.setState({ showHide: !this.state.showHide })}><i>{this.state.showHide ? <VisibilityOffOutlinedIcon /> : <VisibilityOutlinedIcon />}</i></button></div>
-                        <button>Recover Password</button>
-
-                    </div>
-                    <p>Don’t have an account? <button>Sign Up</button></p>
-                    <button className='Submit' onClick={this.submitForm} >submit</button>
-
-                </div> */}
             </div >
         )
     }

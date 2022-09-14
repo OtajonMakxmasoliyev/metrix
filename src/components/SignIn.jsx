@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import VisibilityOffOutlinedIcon from '@mui/icons-material/VisibilityOffOutlined';
 import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
-
+import { Link } from 'react-router-dom';
 
 // import images
 import Lock from "../images/icons/Lock.png"
@@ -27,7 +27,7 @@ const SignIn = (props) => {
 
             </div>
             <p>Don’t have an account? <button onClick={props.chaqir}>Sign Up</button></p>
-            <button className='Submit' onClick={props.Submit} >submit</button>
+            <button className='Submit' onClick={props.Submit} ><Link to={"/navbar"} >Send</Link></button>
 
         </div>
     )
@@ -54,7 +54,7 @@ const SignUp = (props) => {
 
             </div>
             <p>Already have an account? <button onClick={props.chaqir}>Login</button></p>
-            <button className='Submit' onClick={props.Submit} >submit</button>
+            <button className='Submit' onClick={props.Submit} ><Link to={"/navbar"} >Send</Link></button>
 
         </div>
     )
