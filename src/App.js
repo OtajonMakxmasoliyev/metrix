@@ -7,17 +7,23 @@ import Navbar from './components/Navbar';
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
 import Home from './pages/Home';
+import Api from './components/api';
+import OrderSummary from './components/OrderSummary';
 
 function App() {
+
+
   return (
     <div className="App">
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Routes>
           <Route index element={<Form />} />
           <Route path="/navbar" element={<Navbar />} />
           <Route path="/" element={<Navbar />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
+
+      <OrderSummary />
     </div>
   );
 }

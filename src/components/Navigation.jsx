@@ -25,9 +25,11 @@ const Navigation = (props) => {
             </div>
             <div className="Navigation_bottom">
                 <img src={Home} alt="" />
+                <p>{props.pagination}</p>
             </div>
         </div>
     )
 }
 
 export default Navigation
+
