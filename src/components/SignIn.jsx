@@ -39,6 +39,8 @@ const SignIn = (props) => {
 const SignUp = (props) => {
     const [change, setChange] = useState(false)
     const [showHide, setShowHide] = useState(false)
+
+
     return (
         <div className="Login_form">
             <img src={Logo} alt="Metrix Logo" />
@@ -54,6 +56,8 @@ const SignUp = (props) => {
 
             </div>
             <p>Already have an account? <button onClick={props.chaqir}>Login</button></p>
+            
+            {/* <input type="file" name="salom" id="" onChange={rasm()} /> */}
             <button className='Submit' onClick={props.Submit} ><Link to={"/navbar"} >Send</Link></button>
 
         </div>
